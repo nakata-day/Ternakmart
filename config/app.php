@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://ternakmart.test/'),
+    'url' => env('APP_URL', 'http://ternakmart.test/Ternakmart/'),
 
     'asset_url' => env('ASSET_URL'),
 

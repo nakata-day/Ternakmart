@@ -18,16 +18,16 @@ use App\Http\Controllers\RegisterUserController;
 */
 
 // Landing Page
-Route::get('/', [LandingPageController::class, 'index'])->name('landing_page');
+Route::get('/', [LandingPageController::class, 'index'])->name('landing-page');
 
 // Login User
-Route::get('/login-user', [LoginUserController::class, 'index'])->name('login_user');
+Route::get('/login-user', [LoginUserController::class, 'index'])->name('login-user');
 Route::post('/login-user', [LoginUserController::class, 'login']);
 
 // Login Admin
-Route::get('/login-admin', [LoginAdminController::class, 'index'])->name('login_admin');
+Route::get('/login-admin', [LoginAdminController::class, 'index'])->name('login-admin');
 Route::post('/login-admin', [LoginAdminController::class, 'login']);
 
 // Register User
-Route::get('/register-user', [RegisterUserController::class, 'index'])->name('register_user');
+Route::get('/register-user', [RegisterUserController::class, 'index'])->name('register-user');
 Route::post('/register-user', [RegisterUserController::class, 'store']);
